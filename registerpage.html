@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C L O U D - R E G I S T E R</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- CSS Connection link  -->
+    <link rel="stylesheet" href="./stylelogin.css">
+
+</head>
+
+<body>
+
+    <!-- Header section Starts  -->
+
+    <header>
+
+        <a href="#" class="logo"> <i class="fas fa-cloud-moon"></i><span>C</span>loud... </a>
+
+    </header>
+
+    <!-- Header section Ends  -->
+
+    <!-- Register page Starts here  -->
+
+    <div class="main">
+
+        <div class="Register-container" id="RegisterHide">
+
+            <h1>Register Form</h1>
+
+            <form>
+
+                <div class="fields">
+
+                    <div class="input-field">
+                        <label>Username</label>
+                        <input id="username" autocomplete="off" type="text" onkeyup="usernamevalidate()" required
+                            placeholder="Enter your name">
+                        <div class="information-error">
+                            <p id="usersuccessMsg" class=" success"><i class="fas fa-thumbs-up"></i>&numsp; Correct</p>
+                            <p class="error" id="userErrorMsg"><i class="fas fa-exclamation-circle"></i>&numsp; Username
+                                only contains Alphabets</p>
+                        </div>
+
+                    </div>
+
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input id="email" autocomplete="off" type="email" onkeyup="emailvalidate()" required
+                            placeholder="Enter your email">
+                        <div class="information-error">
+                            <p id="emailsuccessMsg" class=" success"><i class="fas fa-thumbs-up"></i>&numsp; Correct</p>
+                            <p class="error" id="emailErrorMsg"><i class="fas fa-exclamation-circle"></i>&numsp; email
+                                only in mdk@gmail.com this format</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="input-field">
+                        <label>Field</label>
+                        <select onkeyup="fieldvalidate()" required id="field">
+                            <option hidden selected>Select anyone..</option>
+                            <option id="option1">Admin</option>
+                            <option id="option2">User</option>
+                        </select>
+                    </div> -->
+
+                    <div class="input-field">
+                        <label>Password</label>
+                        <input id="password" required onkeyup="passwordvalidate()" type="password"
+                            placeholder="Enter your password">
+                        <div class="information-error">
+                            <p id="passsuccessMsg" class=" success"><i class="fas fa-thumbs-up"></i>&numsp; Correct</p>
+                            <p class="error" id="passErrorMsg"><i class="fas fa-exclamation-circle"></i>&numsp; password
+                                have min 7 digits, uppercase, lowercase, number and special character</p>
+                        </div>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Confirm Password</label>
+                        <input id="confirmpassword" onkeyup="confirmpasswordvalidate()" required type="password"
+                            placeholder="Enter your confirm password">
+                        <div class="information-error">
+                            <p id="copasssuccessMsg" class=" success"><i class="fas fa-thumbs-up"></i>&numsp; Correct
+                            </p>
+                            <p class="error" id="copassErrorMsg"><i class="fas fa-exclamation-circle"></i>&numsp;
+                                confirm password does not match password</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button id="smtbtn" onclick="check()" type="button" class="btn-register">
+                        Register
+                    </button>
+                </div>
+
+                <p class="Sign-in">Already have an Account : <a href="./index.html">sign-in</a></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Register page ends here  -->
+
+    <!-- Successfully register popup starts here  -->
+
+    <div id="RegisterPopup" class="Register-popup">
+
+        <img src="./images/tick.png" alt="">
+
+        <h1>Thank You!</h1>
+
+        <p>Your details has been successfully submitted. Thanks!</p><br>
+
+        <a href="./index.html">ok</a>
+
+    </div>
+
+    <!-- Successfully register popup ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptlogin.js"></script>
+
+</html>

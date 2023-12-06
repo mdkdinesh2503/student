@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - D e t a i l s (S)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleuser.css">
+
+</head>
+
+<body>
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="StudentDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="StudentDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="StudentAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="StudentTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="StudentFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="StudentExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="StudentResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="StudentReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Student Details section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Student Details</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Fill Details...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a class="emoji1" href="./StudentReport.html">
+                        <span class="fas fa-edit"></span>
+                        Enquiry
+                    </a>
+
+                    <a onclick="history.back()" class="emoji2">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="Student-container">
+
+                <h1>Student Details Form</h1>
+
+                <form id="myQuiz" method="post">
+
+                    <div class="details personal">
+
+                        <span class="title">Personal Details</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input id="name" type="text" placeholder="Enter your name">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input id="dob" type="date">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input id="eml" type="email" placeholder="Enter your email">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input id="mbl" type="tel" maxlength="10" placeholder="Enter mobile number">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select id="gndr">
+                                    <option disabled selected>Select gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Marital Status</label>
+                                <select id="marsta">
+                                    <option disabled selected>Select marital status</option>
+                                    <option>Single</option>
+                                    <option>Married</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Age</label>
+                                <input id="number" maxlength="2" type="tel" placeholder="Enter your age">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Community</label>
+                                <input id="cmty" type="text" placeholder="Enter your community">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Caste</label>
+                                <input id="cste" type="text" placeholder="Enter your caste">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="details address">
+
+                        <span class="title">Address Details</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+
+                                <label>Address Type</label>
+
+                                <select id="addty">
+                                    <option disabled selected>Select address type</option>
+                                    <option>Permanent</option>
+                                    <option>Temporary</option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field">
+
+                                <label>Area Type</label>
+
+                                <select id="arty">
+                                    <option disabled selected>Select area type</option>
+                                    <option>Rural</option>
+                                    <option>Urban</option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input id="ctry" type="text" placeholder="Enter your country">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Appartment Number</label>
+                                <input id="appno" type="text" placeholder="Enter appartment number">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Address Line 1</label>
+                                <input id="adr1" type="text" placeholder="Enter address line 1">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Address Line 2</label>
+                                <input id="adr2" type="text" placeholder="Enter address line 2">
+                            </div>
+
+                            <div class="input-field">
+                                <label>City</label>
+                                <input id="city" type="text" placeholder="Enter your city">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Pincode</label>
+                                <input id="pncd" type="tel" maxlength="6" placeholder="Enter pincode">
+                            </div>
+
+                            <div class="input-field">
+                                <label>State</label>
+                                <input id="state" type="text" placeholder="Enter your state">
+                            </div>
+
+                        </div>
+
+                        <div class="details family">
+
+                            <span class="title">Family Details</span>
+
+                            <div class="fields">
+
+                                <div class="input-field">
+                                    <label>Total Members</label>
+                                    <input id="ttlmem" type="text" placeholder="Enter family total">
+                                </div>
+
+                                <div class="input-field">
+
+                                    <label>First Graduate</label>
+
+                                    <select id="firgrd">
+                                        <option disabled selected>Select first graduate</option>
+                                        <option>Myself</option>
+                                        <option>Father</option>
+                                        <option>Mother</option>
+                                        <option>Other</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Family Income</label>
+                                    <input id="inc" type="number" placeholder="Enter family income">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Name</label>
+                                    <input id="fthrna" type="text" placeholder="Enter father name">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Occupation</label>
+                                    <input id="fthroc" type="text" placeholder="Enter father occupation">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Mobile Number</label>
+                                    <input id="fthrmo" type="tel" maxlength="10"
+                                        placeholder="Enter father mobile number">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Name</label>
+                                    <input id="mthrna" type="text" placeholder="Enter mother name">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Occupation</label>
+                                    <input id="mthroc" type="text" placeholder="Enter mother occupation">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Mobile Number</label>
+                                    <input id="mthrmo" type="tel" maxlength="10"
+                                        placeholder="Enter mother mobile number">
+                                </div>
+
+                            </div>
+
+                            <div class="details profesinal">
+
+                                <span class="title">College Details</span>
+
+                                <div class="fields">
+
+                                    <div class="input-field">
+                                        <label>Register Number</label>
+                                        <input id="rgtr" type="tel" maxlength="7" placeholder="Enter register number">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Degree</label>
+                                        <input id="degr" type="text" placeholder="Enter your degree">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Department</label>
+                                        <input id="deprt" type="text" placeholder="Enter your department">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>College Name</label>
+                                        <input id="clgna" type="text" placeholder="Enter college name">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Year of passing</label>
+                                        <input id="yrpss" type="tel" maxlength="4" placeholder="Enter year of passing">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>Year of Studing</label>
+
+                                        <select id="yrstu">
+                                            <option disabled selected>Select year of studing</option>
+                                            <option>One</option>
+                                            <option>Two</option>
+                                            <option>Three</option>
+                                            <option>Four</option>
+                                            <option>Five</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>10th Mark</label>
+                                        <input id="m10" type="number" placeholder="Enter your mark">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>10th Study Mode</label>
+
+                                        <select id="m10mo">
+                                            <option disabled selected>Select 10th study mode</option>
+                                            <option>CBSE</option>
+                                            <option>State Board</option>
+                                            <option>Matric</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>10th Total Mark</label>
+                                        <input id="m10ttl" type="number" placeholder="Enter 10th total mark">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>12th Mark</label>
+                                        <input id="m12" type="number" placeholder="Enter your mark">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>12th Study Mode</label>
+
+                                        <select id="m12mo">
+                                            <option disabled selected>Select 12th study mode</option>
+                                            <option>CBSE</option>
+                                            <option>State Board</option>
+                                            <option>Matric</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>12th Total Mark</label>
+                                        <input id="m12ttl" type="number" placeholder="Enter 12th total mark">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="buttons">
+
+                                <button id="pntbtn" class="btn" onclick="printFunction()">
+                                    Print <i class="fas fa-caret-square-right"></i>
+                                </button>
+
+                                <button onclick="submitvalue()" id="smtbtn" type="button" class="btn">
+                                    Submit <i class="fas fa-caret-square-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Student Details section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptuser.js"></script>
+
+</html>

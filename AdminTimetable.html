@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - T i m e t a b l e (A)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleadmin.css">
+
+</head>
+
+<body>
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="AdminDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="AdminRegisterList.html"><i class="fas fa-book"></i>Register List</a></li>
+                <li><a href="AdminDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="AdminAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="AdminTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="AdminFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="AdminExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="AdminResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="AdminReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Admin Time table section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Timetable</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Hi, Admin...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a class="emoji1" href="./AdminReport.html">
+                        <span class="fas fa-edit"></span>
+                        Enquiry
+                    </a>
+
+                    <a onclick="history.back()" class="emoji2">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="Admintimetable-container">
+
+                <h1>Timetable Add</h1>
+
+                <form>
+
+                    <div class="Different-addtt">
+
+                        <div class="input-field">
+                            <label>Year</label>
+                            <select>
+                                <option selected>1st year</option>
+                                <option disabled>2nd year</option>
+                                <option disabled>3rd year</option>
+                                <option disabled>4th year</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Department</label>
+                            <select>
+                                <option hidden selected>Select anyone..</option>
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                <option>CE</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <span class="title">Monday</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>1st</label>
+                            <input autocomplete="off" placeholder="Enter 1st Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>2nd</label>
+                            <input autocomplete="off" placeholder="Enter 2nd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>3rd</label>
+                            <input autocomplete="off" placeholder="Enter 3rd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>4th</label>
+                            <input autocomplete="off" placeholder="Enter 4th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>5th</label>
+                            <input autocomplete="off" placeholder="Enter 5th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>6th</label>
+                            <input autocomplete="off" placeholder="Enter 6th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>7th</label>
+                            <input autocomplete="off" placeholder="Enter 7th Period">
+                        </div>
+
+                    </div>
+
+                    <span class="title">Tuesday</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>1st</label>
+                            <input autocomplete="off" placeholder="Enter 1st Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>2nd</label>
+                            <input autocomplete="off" placeholder="Enter 2nd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>3rd</label>
+                            <input autocomplete="off" placeholder="Enter 3rd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>4th</label>
+                            <input autocomplete="off" placeholder="Enter 4th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>5th</label>
+                            <input autocomplete="off" placeholder="Enter 5th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>6th</label>
+                            <input autocomplete="off" placeholder="Enter 6th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>7th</label>
+                            <input autocomplete="off" placeholder="Enter 7th Period">
+                        </div>
+
+                    </div>
+
+                    <span class="title">Wednesday</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>1st</label>
+                            <input autocomplete="off" placeholder="Enter 1st Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>2nd</label>
+                            <input autocomplete="off" placeholder="Enter 2nd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>3rd</label>
+                            <input autocomplete="off" placeholder="Enter 3rd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>4th</label>
+                            <input autocomplete="off" placeholder="Enter 4th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>5th</label>
+                            <input autocomplete="off" placeholder="Enter 5th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>6th</label>
+                            <input autocomplete="off" placeholder="Enter 6th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>7th</label>
+                            <input autocomplete="off" placeholder="Enter 7th Period">
+                        </div>
+
+                    </div>
+
+                    <span class="title">Thursday</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>1st</label>
+                            <input autocomplete="off" placeholder="Enter 1st Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>2nd</label>
+                            <input autocomplete="off" placeholder="Enter 2nd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>3rd</label>
+                            <input autocomplete="off" placeholder="Enter 3rd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>4th</label>
+                            <input autocomplete="off" placeholder="Enter 4th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>5th</label>
+                            <input autocomplete="off" placeholder="Enter 5th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>6th</label>
+                            <input autocomplete="off" placeholder="Enter 6th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>7th</label>
+                            <input autocomplete="off" placeholder="Enter 7th Period">
+                        </div>
+
+                    </div>
+
+                    <span class="title">Friday</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>1st</label>
+                            <input autocomplete="off" placeholder="Enter 1st Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>2nd</label>
+                            <input autocomplete="off" placeholder="Enter 2nd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>3rd</label>
+                            <input autocomplete="off" placeholder="Enter 3rd Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>4th</label>
+                            <input autocomplete="off" placeholder="Enter 4th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>5th</label>
+                            <input autocomplete="off" placeholder="Enter 5th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>6th</label>
+                            <input autocomplete="off" placeholder="Enter 6th Period">
+                        </div>
+
+                        <div class="input-field">
+                            <label>7th</label>
+                            <input autocomplete="off" placeholder="Enter 7th Period">
+                        </div>
+
+                    </div>
+
+                    <div class="buttons">
+
+                        <button onclick="submitfeesdetails()" id="smtbtn" class="btn">
+                            Add <i class="fas fa-caret-square-right"></i>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <section class="timetable-division">
+
+                <div class="timetable-division-list">
+
+                    <h1>Delete Timetable</h1>
+
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Year</th>
+                                <th>Department</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="active">
+                                <td>1</td>
+                                <td>1st year</td>
+                                <td>CSE</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>2</td>
+                                <td>1st year</td>
+                                <td>IT</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>3</td>
+                                <td>1st year</td>
+                                <td>ECE</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.2rem; padding: 8px;background-color: #1abae2;"> 1ST YEAR
+                        - CSE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.2rem; padding: 8px;background-color: #1abae2;"> 1ST YEAR
+                        - IT
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.2rem; padding: 8px;background-color: #1abae2;"> 1ST YEAR
+                        - ECE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Admin Time table section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptadmin.js"></script>
+
+</html>

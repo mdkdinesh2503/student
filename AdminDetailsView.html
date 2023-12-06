@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>D e t a i l s - V i e w</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Student Result view section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Details View</h1>
+            </div>
+
+            <div class="icon">
+                <span onclick="history.back()" class="fas fa-arrow-left"></span>
+                <span onclick="history.back()">Go Back</span>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="Student-container">
+
+                <h1>Student Details Form</h1>
+
+                <form>
+
+                    <div class="details personal">
+
+                        <span class="title">Personal Details</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <input name="name" type="text" required value="Dinesh Kumar M">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <input name="dob" type="date" required value="2002-03-25">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Email</label>
+                                <input name="eml" type="email" required value="dinesh@gmail.com">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <input name="mbl" type="tel" maxlength="10" required value="7894561232">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <select name="gndr" required>
+                                    <option selected>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Marital Status</label>
+                                <select name="marsta" required>
+                                    <option selected>Single</option>
+                                    <option>Married</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Age</label>
+                                <input name="age" maxlength="2" type="tel" required value="21">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Community</label>
+                                <input name="cmty" type="text" required value="MBC">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Caste</label>
+                                <input name="cste" type="text" required #cste value="KONGU">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="details address">
+
+                        <span class="title">Address Details</span>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+
+                                <label>Address Type</label>
+
+                                <select name="addty" required>
+                                    <option selected>Permanent</option>
+                                    <option>Temporary</option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field">
+
+                                <label>Area Type</label>
+
+                                <select name="arty" required>
+                                    <option>Rural</option>
+                                    <option selected>Urban</option>
+                                </select>
+
+                            </div>
+
+                            <div class="input-field">
+                                <label>Country</label>
+                                <input name="ctry" type="text" required value="India">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Appartment Number</label>
+                                <input name="appno" type="text" required value="13/1">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Address Line 1</label>
+                                <input name="adr1" type="text" required value="Street 1">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Address Line 2</label>
+                                <input name="adr2" type="text" required value="Street 2">
+                            </div>
+
+                            <div class="input-field">
+                                <label>City</label>
+                                <input name="city" type="text" required value="Namakkal">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Pincode</label>
+                                <input name="pncd" type="tel" maxlength="6" required value="637001">
+                            </div>
+
+                            <div class="input-field">
+                                <label>State</label>
+                                <input name="state" type="text" required value="Tamil Nadu">
+                            </div>
+
+                        </div>
+
+                        <div class="details family">
+
+                            <span class="title">Family Details</span>
+
+                            <div class="fields">
+
+                                <div class="input-field">
+                                    <label>Total Members</label>
+                                    <input name="ttlmem" type="text" required value="6">
+                                </div>
+
+                                <div class="input-field">
+
+                                    <label>First Graduate</label>
+
+                                    <select name="firgrd" required >
+                                        <option selected>Myself</option>
+                                        <option>Father</option>
+                                        <option>Mother</option>
+                                        <option>Other</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Family Income</label>
+                                    <input name="inc" type="number" required value="500000">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Name</label>
+                                    <input name="fthrna" type="text" required value="Father name">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Occupation</label>
+                                    <input name="fthroc" type="text" required value="Business">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Father Mobile Number</label>
+                                    <input name="fthrmo" type="tel" maxlength="10" required value="9876541235">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Name</label>
+                                    <input name="mthrna" type="text" required value="Mother Name">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Occupation</label>
+                                    <input name="mthroc" type="text" required value="House Wife">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Mother Mobile Number</label>
+                                    <input name="mthrmo" type="tel" maxlength="10" required value="9685741235">
+                                </div>
+
+                            </div>
+
+                            <div class="details profesinal">
+
+                                <span class="title">College Details</span>
+
+                                <div class="fields">
+
+                                    <div class="input-field">
+                                        <label>Register Number</label>
+                                        <input name="rgtr" type="tel" maxlength="7" required value="1913003">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Degree</label>
+                                        <input name="degr" type="text" required value="BE">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Department</label>
+                                        <input name="deprt" type="text" required value="CSE">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>College Name</label>
+                                        <input name="clgna" type="text" required value="Cloud">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>Year of passing</label>
+                                        <input name="yrpss" type="tel" maxlength="4" required value="2023">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>Year of Studing</label>
+
+                                        <select name="yrstu" required>
+                                            <option>One</option>
+                                            <option>Two</option>
+                                            <option>Three</option>
+                                            <option selected>Four</option>
+                                            <option>Five</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>10th Mark</label>
+                                        <input name="mten" type="number" required value="475">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>10th Study Mode</label>
+
+                                        <select name="mtenmo" required>
+                                            <option selected>CBSE</option>
+                                            <option>State Board</option>
+                                            <option>Matric</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>10th Total Mark</label>
+                                        <input name="mtenttl" type="number" required value="500">
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>12th Mark</label>
+                                        <input name="mtw" type="number" required #mtw value="400">
+                                    </div>
+
+                                    <div class="input-field">
+
+                                        <label>12th Study Mode</label>
+
+                                        <select name="mtwmo" required >
+                                            <option selected>CBSE</option>
+                                            <option>State Board</option>
+                                            <option>Matric</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="input-field">
+                                        <label>12th Total Mark</label>
+                                        <input name="mtwttl" type="number" required value="500">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="buttons">
+
+                                <button type="submit" class="btn">
+                                    Edit <i class="fas fa-caret-square-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Student Result view section ends here  -->
+
+</body>
+
+</html>
+
+<script>
+    function printFunction() {
+
+        var printbutton = document.getElementById("pntbtn");
+        var Header_part = document.getElementById("header-part");
+
+        printbutton.style.visibility = 'hidden';
+        Header_part.style.visibility = 'hidden';
+        window.print();
+        printbutton.style.visibility = 'visible';
+        Header_part.style.visibility = 'visible';
+        return false;
+    }
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    :root {
+        --blue: #4070f4;
+        --black: #000000;
+        --light-blue: #a6bcfa;
+        --dark-blue: #03262c;
+        --light-color: #555;
+        --box-shadow: .3rem .3rem 0 #d2dfff;
+        --text-shadow: .3rem .3rem 0 rgba(0, 0, 0, .2);
+        --border: .1rem solid var(--blue);
+        --white: #fff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: var(--light-blue);
+    }
+
+    #sidebar::-webkit-scrollbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+        width: .4rem;
+    }
+
+    header {
+        height: 75px;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #efefef;
+        border: 1px solid var(--blue);
+        box-shadow: .5rem .5rem 0 var(--light-blue);
+        padding: 1rem 8rem;
+        z-index: 5000;
+    }
+
+    .main-content {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main-content header .menu-toggle h1 {
+        color: var(--blue);
+    }
+
+    .main-content header .icon span {
+        padding: 0px;
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: var(--blue);
+    }
+
+    .main {
+        padding: 1.5rem;
+        min-height: calc(100vh-70px);
+        margin-top: 5rem;
+    }
+
+    @media (max-width : 680px) {
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem 2rem;
+        }
+
+        .main-content header .menu-toggle h1 {
+            margin-left: 0rem;
+        }
+
+    }
+
+    @media (max-width :380px) {
+
+        .main-content header .menu-toggle h1 {
+            font-size: .8rem;
+        }
+
+    }
+
+    @media (max-width :450px) {
+
+        .main-content header .menu-toggle h1 {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .Student-container {
+        max-width: 800px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 25px;
+        margin: -1rem auto;
+        background-color: var(--white);
+        border-top: 8px solid var(--blue);
+        border-left: var(--border);
+        border-right: var(--border);
+        border-bottom: var(--border);
+    }
+
+    .Student-container h1 {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--dark-blue);
+    }
+
+    .Student-container h1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 3px;
+        width: 100px;
+        border-radius: 8px;
+        background-color: var(--blue);
+    }
+
+    .Student-container form {
+        margin-top: 10px;
+        background-color: var(--white);
+        overflow: hidden;
+    }
+
+    .Student-container form .fields {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .Student-container form .fields .input-field {
+        display: flex;
+        width: calc(100% / 3 - 15px);
+        flex-direction: column;
+        margin: 3px 0;
+    }
+
+    .Student-container .input-field label {
+        font-size: .9rem;
+        font-weight: 500;
+        color: var(--blue);
+    }
+
+    .Student-container form .title {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 3px 0;
+        color: var(--dark-blue);
+        text-decoration: underline;
+    }
+
+    .Student-container .input-field input,
+    .Student-container .input-field select {
+        outline: none;
+        font-size: .8rem;
+        font-weight: 400;
+        border-radius: 5px;
+        border: 0.1rem solid var(--light-color);
+        padding: 0 12px;
+        height: 36px;
+        margin: 5px 0;
+        width: calc(100%-10%);
+        color: var(--light-color);
+    }
+
+    @media (max-width: 550px) {
+
+        .Student-container form .fields .input-field {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+
+        .Student-container form .fields {
+            flex-wrap: wrap;
+            gap: 0px;
+        }
+
+    }
+
+    .buttons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn {
+        color: var(--white);
+        background: var(--blue);
+        box-shadow: var(--box-shadow);
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+        font-weight: 500;
+        margin: 2rem;
+        justify-content: space-between;
+        border: var(--border);
+        cursor: pointer;
+    }
+
+    .btn i {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+
+    .btn:hover {
+        background: var(--white);
+        color: var(--blue);
+    }
+
+    @media (max-width : 500px) {
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: calc(100%-50%);
+            align-items: center;
+        }
+
+        .btn {
+            width: 50%;
+            margin: 1rem;
+        }
+
+    }
+
+    @media (max-width :380px) {
+
+        .btn {
+            width: 100%;
+        }
+
+    }
+</style>

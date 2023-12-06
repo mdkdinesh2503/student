@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>N O T - Y E T - U P L O A D</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Not Upolad page section starts  -->
+
+    <div class="container">
+        <div class="image-container">
+            <img src="./images/5.jpg">
+        </div>
+        <div class="content-container">
+            <img src="./images/3.jpg">
+
+            <div class="btn">
+                <a onclick="goToPage()">Go Back</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Not Upolad page section ends  -->
+
+</body>
+
+<script>
+    function goToPage() {
+        history.back();
+    }
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .image-container {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .image-container::before {
+        content: "";
+        position: absolute;
+        height: 38rem;
+        width: 60rem;
+        border: 0.2rem solid #007dfe;
+        background-image: linear-gradient(#fff 0%, #fff 100%);
+        margin: 5rem 19%;
+        border-radius: 1rem;
+        box-shadow: 0 0 20px #c2dbff, 0 0 70px #c2dbff, 0 0 100px #c2dbff;
+    }
+
+    .content-container {
+        margin: -35rem 16%;
+        position: relative;
+        width: 58rem;
+        height: 30rem;
+    }
+
+    .content-container img {
+        height: 100%;
+        width: 60%;
+        object-fit: cover;
+        margin-left: 26%;
+        margin-top: -6rem;
+        border-radius: 30%;
+    }
+
+    .btn {
+        margin-left: 42%;
+        margin-top: 1rem;
+    }
+
+    .btn a {
+        color: #fff;
+        background: #007dfe;
+        border: .2rem solid #007dfe;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 2em;
+        letter-spacing: 0.20em;
+        font-weight: 400;
+        padding: 10px 30px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .btn a:hover {
+        color: #007dfe;
+        background: #fff;
+    }
+
+    @media (max-width:1376px) {
+        .image-container::before {
+            width: 60%;
+        }
+
+        .content-container {
+            margin: -25rem 10%;
+        }
+    }
+
+    @media (max-width:1230px) {
+        .content-container {
+            margin: -25rem 5%;
+        }
+    }
+
+    @media (max-width:1230px) {
+        .image-container::before {
+            margin: 5rem 10%;
+            width: 80%;
+        }
+
+        .content-container {
+            margin: -25rem 5%;
+        }
+    }
+
+    @media (max-width:1040px) {
+        .content-container {
+            margin: -25rem -3%;
+        }
+    }
+
+    @media (max-width:900px) {
+        .content-container {
+            margin: -25rem -15%;
+        }
+    }
+
+    @media (max-width:760px) {
+        .content-container {
+            margin: -25rem -9%;
+            width: 40rem;
+            height: 25rem;
+            text-align: center;
+        }
+
+        .btn {
+            margin: 1rem;
+            margin-left: 35%;
+        }
+    }
+
+    @media (max-width:660px) {
+        .content-container {
+            margin: -25rem -18%;
+            width: 40rem;
+            height: 22rem;
+            text-align: center;
+        }
+
+        .image-container::before {
+            height: 32rem;
+        }
+
+        .btn {
+            margin-left: 30%;
+            margin-top: 1rem;
+        }
+
+        .btn a {
+            font-size: 1em;
+        }
+    }
+
+    @media (max-width:555px) {
+        .content-container {
+            margin: -25rem -20%;
+            width: 25rem;
+            height: 20rem;
+            text-align: center;
+        }
+    }
+
+    @media (max-width:430px) {
+
+        .content-container img {
+            margin-top: -70rem;
+            width: 75%;
+            margin-left: 8rem;
+        }
+
+        .btn a {
+            margin-left: 4rem;
+        }
+    }
+</style>
+
+</html>

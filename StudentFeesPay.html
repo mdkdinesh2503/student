@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - F e e s P a y (S)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Student Result view section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Pay Fees</h1>
+            </div>
+
+            <a href="./StudentFees.html" class="icon">
+                <span class="fas fa-arrow-left"></span>
+                <span>Go Back</span>
+            </a>
+
+        </header>
+
+        <div class="main">
+
+            <br><br><br>
+
+            <div class="Fees-Container">
+                <div class="Section1">
+
+                    <div class="div">
+                        <h1>Register Number :</h1>
+                        <p>1913003</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Name :</h1>
+                        <p>Dinesh Kumar M</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Email :</h1>
+                        <p>dinesh@gmail.com</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Phone Number :</h1>
+                        <p>9876543212</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>College Name :</h1>
+                        <p>Cloud</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Degree :</h1>
+                        <p>B.E.</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Department :</h1>
+                        <p>CSE</p>
+                    </div>
+
+                    <div class="div">
+                        <h1>Total Amount :</h1>
+                        <p>48000</p>
+                    </div>
+
+                </div>
+                <div class="Section1">
+
+                    <h1>Pay Using Credit or Debit Card</h1>
+
+                    <div class="Payment-container">
+
+                        <form>
+
+                            <div class="fields">
+
+                                <div class="input-field">
+                                    <label>All Cards Accepted</label>
+                                    <img src="./images/card_img.png" alt="">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Card Number</label>
+                                    <input maxlength="16" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>Expiry Month and Year</label>
+                                    <input type="month">
+                                </div>
+
+                                <div class="input-field">
+                                    <label>CVV</label>
+                                    <input placeholder="XXX" type="tel" maxlength="3">
+                                </div>
+
+                            </div>
+
+                            <div class="buttons">
+
+                                <button class="btn" type="submit">
+                                    Pay <i class="fas fa-caret-square-right"></i>
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Student Result view section ends here  -->
+
+</body>
+
+</html>
+
+<script>
+    function printFunction() {
+
+        var printbutton = document.getElementById("pntbtn");
+        var Header_part = document.getElementById("header-part");
+
+        printbutton.style.visibility = 'hidden';
+        Header_part.style.visibility = 'hidden';
+        window.print();
+        printbutton.style.visibility = 'visible';
+        Header_part.style.visibility = 'visible';
+        return false;
+    }
+</script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+    :root {
+        --blue: #4070f4;
+        --black: #000000;
+        --light-blue: #a6bcfa;
+        --dark-blue: #03262c;
+        --light-color: #555;
+        --box-shadow: .3rem .3rem 0 #d2dfff;
+        --text-shadow: .3rem .3rem 0 rgba(0, 0, 0, .2);
+        --border: .1rem solid var(--blue);
+        --white: #fff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: var(--light-blue);
+    }
+
+    #sidebar::-webkit-scrollbar {
+        visibility: hidden;
+        display: none;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--blue);
+    }
+
+    ::-webkit-scrollbar {
+        width: .4rem;
+    }
+
+    header {
+        height: 75px;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #efefef;
+        border: 1px solid var(--blue);
+        box-shadow: .5rem .5rem 0 var(--light-blue);
+        padding: 1rem 8rem;
+        z-index: 5000;
+    }
+
+    .main-content {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .main-content header .menu-toggle h1 {
+        color: var(--blue);
+    }
+
+    .main-content header a {
+        text-decoration: none;
+    }
+
+    .main-content header .icon span {
+        padding: 0px;
+        cursor: pointer;
+        font-size: 1.6rem;
+        color: var(--blue);
+    }
+
+    .main {
+        padding: 1.5rem;
+        min-height: calc(100vh-70px);
+        margin-top: 5rem;
+    }
+
+    @media (max-width : 680px) {
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem 4rem;
+        }
+
+        .main-content header .menu-toggle h1 {
+            margin-left: 1rem;
+        }
+
+    }
+
+    @media (max-width :450px) {
+        header {
+            padding: 1rem 2rem;
+        }
+
+        .main-content header .menu-toggle h1 {
+            font-size: 1.5rem;
+            margin-left: 0rem;
+        }
+
+        .main-content header .icon span {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    .Fees-Container {
+        margin-top: -3rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        border: var(--border);
+        background: var(--white);
+        padding: .2rem;
+        height: 33rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Section1 {
+        margin: .8rem;
+        padding: .8rem;
+        border: var(--border);
+        background: var(--white);
+    }
+
+    .Section1 h1 {
+        font-size: 1.4rem;
+    }
+
+    .Section1 .div {
+        background-color: var(--blue);
+        color: var(--white);
+        padding: .5rem;
+        margin: .4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Section1 .div p {
+        font-size: 1.3rem;
+    }
+
+    .Payment-container form .fields .input-field img {
+        height: 28px;
+        width: 40%;
+        margin-top: 8px;
+        filter: drop-shadow(0 0 1px #000);
+    }
+
+    .Payment-container {
+        max-width: 500px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 20px;
+        margin: .7rem auto;
+        background-color: var(--white);
+        border-top: 8px solid var(--blue);
+        border-left: var(--border);
+        border-right: var(--border);
+        border-bottom: var(--border);
+    }
+
+    .Payment-container form {
+        background-color: var(--white);
+        overflow: hidden;
+    }
+
+    .Payment-container form .fields {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .Payment-container form .fields .input-field {
+        display: flex;
+        width: calc(100% - 15px);
+        flex-direction: column;
+        margin: 3px 0;
+    }
+
+    .Payment-container .input-field label {
+        font-size: .8rem;
+        font-weight: 500;
+        color: var(--blue);
+    }
+
+    .Payment-container .input-field input {
+        outline: none;
+        font-size: .7rem;
+        font-weight: 400;
+        border-radius: 5px;
+        border: 0.1rem solid var(--light-color);
+        padding: 0 12px;
+        height: 36px;
+        margin: 5px 0;
+        width: calc(100%-10%);
+    }
+
+    .Payment-container .input-field input:focus {
+        box-shadow: .2rem .2rem 0 #d2dfff;
+        border: .1rem solid #4070f4;
+        color: #000000;
+    }
+
+    .buttons {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn {
+        color: var(--white);
+        background: var(--blue);
+        box-shadow: var(--box-shadow);
+        font-size: 1.2rem;
+        padding: 0.2rem 1rem;
+        font-weight: 500;
+        margin: 1rem;
+        justify-content: space-between;
+        border: var(--border);
+        cursor: pointer;
+    }
+
+    .btn i {
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+
+    .btn:hover {
+        background: var(--white);
+        color: var(--blue);
+    }
+
+    @media (max-width : 500px) {
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            width: calc(100%-50%);
+            align-items: center;
+        }
+
+        .btn {
+            width: 50%;
+            margin: 1rem;
+        }
+
+    }
+
+    @media (max-width :380px) {
+
+        .btn {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width : 1245px) {
+        .Fees-Container {
+            grid-template-columns: 1fr;
+        }
+
+        .main {
+            min-height: 170vh;
+        }
+    }
+
+    @media (max-width : 690px) {
+        .Fees-Container {
+            height: 30rem;
+        }
+
+        .Section1 {
+            margin: .5rem;
+            padding: .5rem;
+        }
+
+        .Section1 h1 {
+            font-size: 1.1rem;
+        }
+
+        .Section1 .div p {
+            font-size: .9rem;
+        }
+    }
+
+    @media (max-width : 500px) {
+        .Fees-Container {
+            height: 28rem;
+            background-color: transparent;
+            border: none;
+        }
+
+        .Section1 h1 {
+            font-size: .7rem;
+        }
+
+        .Section1 .div p {
+            font-size: .7rem;
+        }
+    }
+</style>

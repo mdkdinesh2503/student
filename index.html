@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C L O U D - L O G I N</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- CSS Connection link  -->
+    <link rel="stylesheet" href="./stylelogin.css">
+
+</head>
+
+<body>
+
+    <!-- Header section Starts  -->
+
+    <header>
+
+        <a href="#" class="logo"> <i class="fas fa-cloud-moon"></i><span>C</span>loud... </a>
+
+    </header>
+
+    <!-- Header section Ends  -->
+
+    <!-- Login form section starts  -->
+
+    <div class="login-container" id="LoginHide">
+
+        <div class="login-content" id="blur">
+
+            <form action="">
+
+                <a href=""><img src="./images/review-img.png"></a>
+
+                <h2 class="title">sign-in</h2>
+
+                <div class="input-div one">
+
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+
+                    <div class="div">
+                        <input type="text" autocomplete="off" id="UserName" name="UserName" placeholder="mdk / admin"
+                            class="input" />
+                    </div>
+
+                </div>
+
+                <div class="input-div pass">
+
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+
+                    <div class="div">
+                        <input type="password" id="Password" name="Password" placeholder="mdk / admin " class="input" />
+                    </div>
+
+                </div>
+                <div class="iconvisible">
+                    <input type="checkbox" onclick="myFunction()">
+                    <p> Show Password</p>
+                </div>
+
+                <a class="forgotpass" onclick="toggle()" href="#">Forgot Password?</a>
+
+                <button type="button" id="submit" onclick="validateuser()" class="btn-login">Login</button>
+
+                <p class="signup">Dont have a Account : <a href="./registerpage.html">sign-up</a> </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- login form section ends  -->
+
+    <!-- forgot password section starts -->
+
+    <dialog id="forgot-password" class="forgotpass-container">
+
+        <a class="close-btn" id="close-btn" onclick="toggle()"><i class="fas fa-times"></i></a>
+
+        <h2>Forgot Password</h2>
+        <p>It's quick and easy.</p>
+
+        <div id="line"></div>
+
+        <form>
+
+            <a href="#" class="close-forgotpass"></a>
+
+            <label>Email</label>
+
+            <input placeholder="Enter your email" id="email" autocomplete="off" onkeyup="forgotemailvalidate()" required
+                type="email" name="email" placeholder="Email"><br>
+
+            <div class="forgot-information-error">
+
+                <p class="forgot-error" id="forgotemailErrorMsg"><i class="fas fa-exclamation-circle"></i>&numsp; email
+                    in mdk@gmail.com this format</p>
+                <p id="forgotemailsuccessMsg" class="forgot-success"><i class="fas fa-thumbs-up"></i>&numsp; Correct</p>
+
+            </div>
+
+            <button onclick="forgotSend()" id="ForgotBtn" class="forgot-btn" type="button" name="forgot_password">Send</button>
+
+        </form>
+
+    </dialog>
+
+    <!-- forgot password section ends -->
+
+    <!-- Successfully user login popup starts here  -->
+
+    <div id="UserLoginPopup" class="UserLogin-popup">
+
+        <img src="./images/tick.png" alt="">
+
+        <h1>User Login Successfull!</h1>
+
+        <p>We are Redirecting to Website. Do not refresh the page!!</p><br>
+
+        <a href="./StudentDashboard.html">ok</a=>
+
+    </div>
+
+    <!-- Successfully user login popup ends here  -->
+
+    <!-- Successfully admin login popup starts here  -->
+
+    <div id="AdminLoginPopup" class="AdminLogin-popup">
+
+        <img src="./images/tick.png" alt="">
+
+        <h1>Admin Login Successfull!</h1>
+
+        <p>We are Redirecting to Website. Do not refresh the page!!</p><br>
+
+        <a class="admingoto" href="./AdminDashboard.html">ok</a>
+
+    </div>
+
+    <!-- Successfully admin login popup ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptlogin.js"></script>
+
+</html>

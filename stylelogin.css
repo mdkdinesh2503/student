@@ -1,0 +1,984 @@
+/*-----------------------------------------------
+        Overall Style section starts here
+------------------------------------------------- */
+
+:root {
+  --blue: #4070f4;
+  --dark-blue: #03262c;
+  --light-blue: #afc4ff;
+  --light-color: #777777;
+  --box-shadow: 0.3rem 0.3rem 0 #d2dfff;
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.1rem solid var(--blue);
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  overflow: hidden;
+}
+
+html {
+  font-size: 55%;
+  max-zoom: 80%;
+  overflow: hidden;
+}
+
+/* Overall Style section ends here  */
+
+/*------------------------------------------------
+        Login page header section starts here
+--------------------------------------------------  */
+
+header {
+  padding: 1.5rem 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 15px 5px var(--blue);
+  background-color: #03262c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: var(--white);
+}
+
+header .logo i,
+header .logo span {
+  color: var(--blue);
+}
+
+/* Login page header section ends here  */
+
+/*----------------------------------------
+        button section starts here
+------------------------------------------  */
+
+.btn-main {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  display: inline-flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  width: fit-content;
+  border: 0.2rem solid var(--blue);
+  border-radius: 0.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.btn-main:hover {
+  color: var(--blue);
+  background: var(--white);
+}
+
+.btn-login {
+  display: block;
+  width: 70%;
+  border-radius: 25px;
+  border: 0.1rem solid #4070f4;
+  background-color: #4070f4;
+  box-shadow: 0.2rem 0.2rem 0px #afc4ff;
+  font-size: 2rem;
+  padding: 10px;
+  color: #fff;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.btn-register {
+  color: #fff;
+  background: #4070f4;
+  box-shadow: 0.2rem 0.2rem 0 #d2dfff;
+  font-size: 2rem;
+  padding: 0.8rem 1rem;
+  font-weight: 500;
+  margin: 0 2rem 2rem;
+  justify-content: space-between;
+  border: 0.1rem solid #4070f4;
+  cursor: pointer;
+}
+
+.btn-register:hover {
+  background-color: #fff;
+  color: #4070f4;
+}
+
+.btn-register i {
+  line-height: 1;
+}
+
+/* button Responsive section starts here  */
+
+@media (max-width: 500px) {
+  .btn-main {
+    font-size: 2.5rem;
+    padding: 10px 20px;
+  }
+
+  .btn-main span {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 415px) {
+  header .logo {
+    font-size: 3rem;
+  }
+
+  .btn-main {
+    font-size: 2.2rem;
+    padding: 8px 15px;
+  }
+}
+
+/* button Responsive section ends here  */
+
+/* button section ends here  */
+
+/*-----------------------------------------
+        Login form section starts here
+-------------------------------------------  */
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  min-height: 100vh;
+  background-color: var(--light-blue);
+}
+
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid var(--blue);
+  border-left: 0.2rem solid var(--blue);
+  border-right: 0.2rem solid var(--blue);
+  border-bottom: 0.2rem solid var(--blue);
+  padding: 15px;
+}
+
+.login-container .login-content form {
+  width: 350px;
+}
+
+.login-content img {
+  height: 110px;
+  border-radius: 100%;
+}
+
+.login-content .title {
+  margin: 15px 0;
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0.2rem 0.2rem 0 var(--light-blue);
+  font-size: 3.8rem;
+  letter-spacing: .3rem;
+}
+
+.login-content .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 20px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid var(--blue);
+}
+
+.login-content .input-div:hover {
+  border-bottom: 2px solid var(--dark-blue);
+  transition: 0.3s;
+  transform-origin: right;
+}
+
+.i {
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+}
+
+.input-div div {
+  position: relative;
+  height: 30px;
+}
+
+.login-container .login-content form .input-div .div input::placeholder {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-color);
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.input-div div input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.1rem 0.7rem;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--black);
+  font-family: "poppins", sans-serif;
+}
+
+.login-content .input-div.one {
+  margin-top: -5px;
+}
+
+.login-content .input-div.pass {
+  margin-bottom: 4px;
+}
+
+.login-container .login-content form .iconvisible {
+  position: relative;
+  padding: 2rem 1rem 0rem 1rem;
+  display: flex;
+}
+
+.login-container .login-content form .iconvisible p {
+  margin-top: -0.2rem;
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.login-container .login-content form .iconvisible input {
+  width: 20px;
+  height: 20px;
+  margin-top: -0.2rem;
+  cursor: pointer;
+}
+
+.forgotpass {
+  display: block;
+  width: fit-content;
+  float: right;
+  text-decoration: none;
+  color: var(--black);
+  margin: 10px;
+  font-size: 1.8rem;
+  transition: 0.3s;
+}
+
+.forgotpass:hover {
+  color: var(--blue);
+}
+
+.login-container .login-content form .signup {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--black);
+  float: left;
+}
+
+.login-container .login-content form .signup a {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: bolder;
+}
+
+.login-container .login-content form .signup a:hover {
+  color: var(--blue);
+}
+
+/* login form Responsive section starts here  */
+
+@media (max-width: 1000px) {
+  .login-content img {
+    height: 100px;
+  }
+
+  .login-content .title {
+    font-size: 2.4rem;
+  }
+
+  .login-container {
+    margin-top: 0rem;
+  }
+
+  .login-container .login-content form {
+    width: 300px;
+  }
+
+  .login-container .login-content form .input-div .div input::placeholder {
+    font-size: 14px;
+  }
+
+  .input-div div input {
+    font-size: 19px;
+  }
+
+  .login-content .input-div {
+    margin: 10px 0;
+  }
+
+  .forgotpass {
+    font-size: 1.4rem;
+  }
+
+  .btn-login {
+    height: 40px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .login-content img {
+    height: 90px;
+  }
+
+  .login-content .title {
+    font-size: 2.5rem;
+  }
+
+  .login-container .login-content form .input-div .div input::placeholder {
+    font-size: 12px;
+  }
+
+  .input-div div input {
+    font-size: 14px;
+  }
+
+  .forgotpass {
+    font-size: 1.2rem;
+  }
+
+  .login-content .input-div {
+    margin: 8px 0;
+  }
+
+  .login-container .login-content form .signup {
+    font-size: 1.5rem;
+  }
+
+  .login-container .login-content form .signup a {
+    font-size: 1.5rem;
+  }
+
+  .btn-login {
+    height: 30px;
+    font-size: 1.5rem;
+  }
+
+  .login-container .login-content form .iconvisible p {
+    font-size: 1.4rem;
+  }
+
+  .login-container .login-content form .iconvisible input {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* login form Responsive section ends here  */
+
+/* Login form section ends here  */
+
+/*--------------------------------------------
+        Register form section starts here
+----------------------------------------------  */
+
+.main {
+  min-height: 100vh;
+  margin-top: 9rem;
+  background-color: var(--light-blue);
+}
+
+.buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.Register-container {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 25px;
+  margin: 6rem auto;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid var(--blue);
+  border-left: 0.2rem solid var(--blue);
+  border-right: 0.2rem solid var(--blue);
+  border-bottom: 0.2rem solid var(--blue);
+}
+
+.Register-container h1 {
+  position: relative;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-top: 0px;
+  color: var(--dark-blue);
+}
+
+.Register-container h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  bottom: -1px;
+  height: 4px;
+  width: 140px;
+  border-radius: 8px;
+  background-color: var(--blue);
+}
+
+.Register-container form {
+  margin-top: 16px;
+  background-color: var(--white);
+  overflow: auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.Register-container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Register-container form .fields .input-field {
+  display: flex;
+  width: calc(100% - 15px);
+  flex-direction: column;
+  margin: 2px 0;
+}
+
+.Register-container .input-field label {
+  font-size: 1.7rem;
+  font-weight: 800;
+  position: relative;
+  display: inline-block;
+  color: var(--blue);
+}
+
+.Register-container .input-field input,
+.Register-container .input-field select {
+  display: block;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 5px;
+  border: var(--border);
+  color: var(--light-color);
+  padding: 0 10px;
+  height: 30px;
+  margin: 8px 0;
+  width: calc(100%-10%);
+}
+
+.Register-container form .fields .input-field .information-error {
+  display: inline-flex;
+}
+
+.input-field .error {
+  font-size: 10px;
+  color: red;
+  visibility: hidden;
+}
+
+.input-field .success {
+  font-size: 10px;
+  color: green;
+  visibility: hidden;
+}
+
+.Register-container .input-field select:focus {
+  box-shadow: var(--box-shadow);
+}
+
+.Register-container .input-field input:focus {
+  box-shadow: var(--box-shadow);
+  color: var(--black);
+}
+
+.Register-container form .Sign-in {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--black);
+  float: left;
+}
+
+.Register-container form .Sign-in a {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  font-weight: bolder;
+}
+
+.Register-container form .Sign-in a:hover {
+  color: var(--blue);
+}
+
+/* Register form Responsive section starts here  */
+
+@media (max-width: 700px) {
+  .Register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 6rem auto;
+  }
+}
+
+@media (max-width: 582px) {
+  .Register-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Register-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 430px) {
+  .Register-container {
+    max-width: 320px;
+  }
+
+  .main {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 405px) {
+  .Register-container {
+    max-width: 300px;
+  }
+
+.Register-container .input-field label {
+    font-size: 1.4rem;
+}
+
+.Register-container .input-field input,
+.Register-container .input-field select {
+  font-size: 14px;
+  font-weight: 200;
+  height: 27px;
+}
+
+.Register-container form .Sign-in {
+    font-size: 1.5rem;
+}
+}
+
+/* Register form Responsive section ends here  */
+
+/* Register form section ends here */
+
+/*-------------------------------------------------
+        Forgot password section starts here
+--------------------------------------------------- */
+
+.login-content#blur.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.forgotpass-container .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.forgotpass-container .close-btn:hover {
+  color: red;
+}
+
+.forgotpass-container form .forgot-information-error {
+  display: flex;
+  flex-direction: row;
+  margin-top: -13px;
+  margin-bottom: 10px;
+}
+
+.forgotpass-container form .forgot-information-error .forgot-error {
+  font-size: 10px;
+  color: red;
+  visibility: hidden;
+}
+
+.forgotpass-container form .forgot-information-error .forgot-success {
+  font-size: 10px;
+  color: green;
+  visibility: hidden;
+}
+
+.forgotpass-container input:focus {
+  box-shadow: var(--box-shadow);
+  color: var(--black);
+}
+
+.forgotpass-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  padding: 50px;
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid var(--blue);
+  border-left: 0.2rem solid var(--blue);
+  border-right: 0.2rem solid var(--blue);
+  border-bottom: 0.2rem solid var(--blue);
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#forgot-password.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.forgotpass-container h2 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: -3rem;
+  color: var(--dark-blue);
+}
+
+.forgotpass-container h2::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 18%;
+  height: 4px;
+  width: 180px;
+  border-radius: 8px;
+  background-color: var(--blue);
+}
+
+.forgotpass-container p {
+  padding: 6px 0 3px 0;
+  font-size: 13px;
+  color: var(--black);
+}
+
+.forgotpass-container #line {
+  height: 1px;
+  width: 100%;
+  background: var(--blue);
+  margin: 5px 0 10px 0;
+}
+
+.forgotpass-container label {
+  font-size: 14px;
+  font-family: Verdana;
+  font-weight: 800;
+  display: inline-block;
+  color: var(--blue);
+}
+
+.forgotpass-container input {
+  height: 30px;
+  width: 90%;
+  margin: 5px 0;
+  display: block;
+  outline: none;
+  border: var(--border);
+  color: var(--light-color);
+  font-size: 2rem;
+  font-weight: 400;
+  background: var(--white);
+  outline: none;
+  border-radius: 5px;
+  padding: 0px 12px;
+}
+
+.forgotpass-container .forgot-btn {
+  height: 40px;
+  width: 50%;
+  border: var(--border);
+  color: var(--white);
+  background: var(--blue);
+  box-shadow: var(--box-shadow);
+  font-size: 20px;
+  transform: translateX(50%);
+  cursor: pointer;
+}
+
+.forgotpass-container .forgot-btn:hover {
+  background: var(--white);
+  color: var(--blue);
+  border: var(--border);
+}
+
+/* Forgot password Responsive section starts here  */
+
+@media (max-width: 550px) {
+  .forgotpass-container .close-btn {
+    top: 10px;
+  }
+
+  .forgotpass-container {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .forgotpass-container h2 {
+    margin-top: -1rem;
+  }
+
+  .forgotpass-container h2::before {
+    left: 6%;
+    top: 16%;
+  }
+}
+
+@media (max-width: 360px) {
+  .forgotpass-container {
+    width: 250px;
+  }
+
+  .forgotpass-container input {
+    height: 35px;
+    width: 80%;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 300px) {
+  .forgotpass-container {
+    width: 200px;
+  }
+
+  .forgotpass-container h2 {
+    font-size: 18px;
+  }
+
+  .forgotpass-container h2::before {
+    left: 8%;
+    top: 14%;
+  }
+}
+
+/* Forgot password Responsive section ends here  */
+
+/* Forgot password section ends here */
+
+/*-------------------------------------------------
+        Register success popup starts here
+--------------------------------------------------- */
+
+.Register-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid #159538;
+  border-left: 0.2rem solid #159538;
+  border-right: 0.2rem solid #159538;
+  border-bottom: 0.2rem solid #159538;
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#RegisterPopup.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.Register-popup img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.Register-popup h1 {
+  font-size: 3rem;
+}
+
+.Register-popup p {
+  font-size: 1.5rem;
+}
+
+.Register-popup a {
+  font-size: 2rem;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  background-color: #159538;
+}
+
+.Register-container#RegisterHide.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Register success popup ends here  */
+
+/*-------------------------------------------------
+       User Login success popup starts here
+--------------------------------------------------- */
+
+.UserLogin-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid #159538;
+  border-left: 0.2rem solid #159538;
+  border-right: 0.2rem solid #159538;
+  border-bottom: 0.2rem solid #159538;
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#UserLoginPopup.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.UserLogin-popup img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.UserLogin-popup h1 {
+  font-size: 3rem;
+}
+
+.UserLogin-popup p {
+  font-size: 1.5rem;
+}
+
+.UserLogin-popup a {
+  font-size: 2rem;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  background-color: #159538;
+}
+
+.login-container#LoginHide.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* User login success popup ends here  */
+
+/*-------------------------------------------------
+       Admin Login success popup starts here
+--------------------------------------------------- */
+
+.AdminLogin-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  border-top: 8px solid #159538;
+  border-left: 0.2rem solid #159538;
+  border-right: 0.2rem solid #159538;
+  border-bottom: 0.2rem solid #159538;
+  background-color: var(--white);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#AdminLoginPopup.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.AdminLogin-popup img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.AdminLogin-popup h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.AdminLogin-popup p {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+
+.AdminLogin-popup .admingoto {
+  font-size: 2rem;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  background-color: #159538;
+}
+
+.login-container#LoginHide.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Admin login success popup ends here  */

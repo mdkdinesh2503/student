@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - R e p o r t (A)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleadmin.css">
+
+</head>
+
+<body onload="getDate();">
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="AdminDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="AdminRegisterList.html"><i class="fas fa-book"></i>Register List</a></li>
+                <li><a href="AdminDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="AdminAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="AdminTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="AdminFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="AdminExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="AdminResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="AdminReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Admin Report section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Report</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main1">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Contact us...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a onclick="history.back()" class="emoji10">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="Adminreport-container">
+
+                <h1>Parents Report Form</h1>
+
+                <form>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input id="Adminreportname" type="text" placeholder="Enter your name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input id="Adminreportemail" type="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Subject</label>
+                            <input id="AdminreportSubject" type="email" placeholder="Enter your Subject">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Message here</label>
+                            <textarea type="text" rows="10">
+                            </textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="buttons">
+
+                        <button id="smtbtn" type="submit" class="btn">
+                            Send <i class="fas fa-caret-square-right"></i>
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="Adminreport-container">
+
+                <h1>Find Details</h1>
+
+                <form>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <input id="Adminfindregno" autocomplete="off" type="search"
+                                placeholder="Type to Search">
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div><br>
+
+            <section class="AdminStudReport">
+
+                <div class="AdminStudReport-list">
+
+                    <h1>Student Report Details</h1>
+
+                    <table class="AdminStudReport-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Register number</th>
+                                <th>Name</th>
+                                <th>Enquiry</th>
+                                <th>date</th>
+                                <th>time</th>
+                                <th>Details</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="active">
+                                <td>01</td>
+                                <td>1913022</td>
+                                <td>Dinesh kumar</td>
+                                <td>Fees</td>
+                                <td>25-03-2002</td>
+                                <td>8:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>02</td>
+                                <td>1913002</td>
+                                <td>Kiran</td>
+                                <td>Attendance</td>
+                                <td>10-01-2000</td>
+                                <td>9:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>03</td>
+                                <td>1913003</td>
+                                <td>Ganesh</td>
+                                <td>Details Form</td>
+                                <td>03-05-2003</td>
+                                <td>8:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>04</td>
+                                <td>1913054</td>
+                                <td>Hari</td>
+                                <td>result</td>
+                                <td>03-12-2001</td>
+                                <td>8:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>05</td>
+                                <td>1913051</td>
+                                <td>Subramani</td>
+                                <td>other</td>
+                                <td>03-02-2022</td>
+                                <td>9:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>06</td>
+                                <td>1913011</td>
+                                <td>Shree</td>
+                                <td>Timetable</td>
+                                <td>03-02-2022</td>
+                                <td>9:00 AM</td>
+                                <td><a href="./AdminReportView.html"><button>View</button></a></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+ 
+    <!-- Admin Report section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptadmin.js"></script>
+
+</html>

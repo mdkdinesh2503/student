@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - R e s u l t s (A)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleadmin.css">
+
+</head>
+
+<body>
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="AdminDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="AdminRegisterList.html"><i class="fas fa-book"></i>Register List</a></li>
+                <li><a href="AdminDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="AdminAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="AdminTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="AdminFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="AdminExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="AdminResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="AdminReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Admin Result section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Result Details</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Hi, Admin Find Result...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a class="emoji1" href="./AdminReport.html">
+                        <span class="fas fa-edit"></span>
+                        Enquiry
+                    </a>
+
+                    <a onclick="history.back()" class="emoji2">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div><br><br>
+
+            <div class="AdminResult-container">
+
+                <h1>Add Result</h1>
+
+                <form>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Register number</label>
+                            <input id="AdminResultregno" autocomplete="off" type="tel" maxlength="7"
+                                placeholder="Enter Register number">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Name</label>
+                            <input id="AdminResultname" placeholder="Enter Name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Result</label>
+                            <input id="AdminResultmarks" placeholder="Pass / Fail">
+                        </div>
+
+                    </div>
+
+                    <span class="title">Normal Subjects</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Professsional Ethics</label>
+                            <select id="Admingradesub1">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Big Data</label>
+                            <select id="Admingradesub2">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Cryptography and Cloud</label>
+                            <select id="Admingradesub3">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Graphics and Multimedia</label>
+                            <select id="Admingradesub4">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Big Data Lab</label>
+                            <select id="Admingradesub6">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Graphics and Multimedia Lab</label>
+                            <select id="Admingradesub7">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <span class="title">Elective Subject</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>BI / HSN</label>
+                            <select>
+                                <option hidden selected>Select any one</option>
+                                <option>Bussiness Intelligence</option>
+                                <option>High Speed Network</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>GRADE</label>
+                            <select id="Admingradesub5">
+                                <option hidden selected>Select any one</option>
+                                <option>O</option>
+                                <option>A+</option>
+                                <option>A</option>
+                                <option>B+</option>
+                                <option>B</option>
+                                <option>RA-F</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field"></div>
+
+                    </div>
+
+                    <div class="buttons">
+
+                        <button onclick="submitfeesdetails()" id="smtbtn" class="btn">
+                            <i class="fas fa-share"></i>
+                            Add
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div><br>
+
+            <div class="AdminExam-container">
+
+                <h1>Find Details</h1>
+
+                <form>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <input id="Adminfindregno" autocomplete="off" type="search"
+                                placeholder="Type to Search">
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div><br>
+
+            <section class="AdminResultDetails">
+
+                <div class="AdminResultDetails-list">
+
+                    <table class="AdminResultDetails-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Register Number</th>
+                                <th>Name</th>
+                                <th>Result</th>
+                                <th>Delete</th>
+                                <th>Details</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>01</td>
+                                <td>1913022</td>
+                                <td>Dinesh kumar</td>
+                                <td>Pass</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>1913002</td>
+                                <td>Kiran</td>
+                                <td>Pass</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>03</td>
+                                <td>1913003</td>
+                                <td>Ganesh</td>
+                                <td>Fail</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>04</td>
+                                <td>1913054</td>
+                                <td>Hari</td>
+                                <td>Pass</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                            <tr class="active">
+                                <td>05</td>
+                                <td>1913051</td>
+                                <td>Subramani</td>
+                                <td>Fail</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                            <tr>
+                                <td>06</td>
+                                <td>1913011</td>
+                                <td>Shree</td>
+                                <td>Pass</td>
+                                <td><i class="fas fa-trash-alt"></i></td>
+                                <td><button onclick="ResultPage()">View</button></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+    
+    <!-- Admin Result section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptadmin.js"></script>
+
+</html>

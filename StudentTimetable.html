@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - T i m e t a b l e (S)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleuser.css">
+
+</head>
+
+<body>
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="StudentDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="StudentDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="StudentAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="StudentTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="StudentFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="StudentExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="StudentResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="StudentReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Student Timetable section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Time Table</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Hi, Dinesh...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a class="emoji1">
+                        <span class="fas fa-edit"></span>
+                        Enquiry
+                    </a>
+
+                    <a onclick="history.back()" class="emoji2">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Timetable CSE starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - CSE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Timetable IT starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - IT
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Timetable ECE starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - ECE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Timetable EEE starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - EEE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Timetable ME starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - ME
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!-- Timetable CE starts here  -->
+
+            <div class="table-container">
+
+                <table>
+
+                    <th colspan="8" style="font-size: 1.1rem; padding: 8px;background-color: #1abae2;">1ST YEAR - CE
+                    </th>
+
+                    <tr class="size" id="hide">
+                        <th>DATE / TIME</th>
+                        <th>09.00 A.M. To 09.50 A.M.</th>
+                        <th>09.50 A.M. To 10.40 A.M.</th>
+                        <th>10.55 A.M. To 11.40 P.M.</th>
+                        <th>11.40 A.M. To 12.30 P.M.</th>
+                        <th>01.30 P.M. To 02.20 P.M.</th>
+                        <th>02.20 P.M. To 03.10 P.M.</th>
+                        <th>03.10 P.M. To 04.00 P.M.</th>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">MON</th>
+                        <td>CT/HSN/BI</td>
+                        <td>GM</td>
+                        <td>BD&CC</td>
+                        <td>PE</td>
+                        <td>BD&CC</td>
+                        <td>SSD/LIB</td>
+                        <td>GM</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">TUE</th>
+                        <td>CT/C&NS</td>
+                        <td>PE</td>
+                        <td>HSN/BI</td>
+                        <td>BD&CC</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CSS/GM LAB</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">WED</th>
+                        <td>CT/GM</td>
+                        <td>HSN/BI</td>
+                        <td>C&NS/HH</td>
+                        <td>BD&CC</td>
+                        <td>GM</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                    <tr class="clr3">
+                        <th class="size">THU</th>
+                        <td>CT/PE</td>
+                        <td>HSN/BI</td>
+                        <td colspan="2">BD&CC/GM LAB</td>
+                        <td colspan="3">PRIEE</td>
+                    </tr>
+
+                    <tr class="clr1">
+                        <th class="size">FRI</th>
+                        <td>CT/BD&CC</td>
+                        <td>GM</td>
+                        <td colspan="2">PRIEE</td>
+                        <td>C&NS</td>
+                        <td>PE</td>
+                        <td>C&NS</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Student Timetable section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptuser.js"></script>
+
+</html>

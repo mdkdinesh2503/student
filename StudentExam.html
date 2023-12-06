@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title name -->
+    <title>C l o u d - E x a m (S)</title>
+
+    <!-- Title logo link  -->
+    <link rel="shortcut icon" sizes="32x32" href="./images/title-img.png" type="image/x-icon" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- css connection  -->
+    <link rel="stylesheet" href="styleuser.css">
+
+</head>
+
+<body>
+
+    <!-- navigation section starts here  -->
+
+    <div class="navigation">
+
+        <input type="checkbox" id="btn" hidden>
+
+        <label id="menu-btn" for="btn" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+        </label>
+
+        <nav id="sidebar">
+
+            <div class="title" onclick="OpenPage()"> <i class="fas fa-cloud-moon"></i> Cloud..</div>
+
+            <ul class="list-items">
+                <li><a href="StudentDashboard.html"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li><a href="StudentDetails.html"><i class="fas fa-users"></i>Student Details</a></li>
+                <li><a href="StudentAttendance.html"><i class="fas fa-address-book"></i>Attendance</a></li>
+                <li><a href="StudentTimetable.html"><i class="fas fa-calendar"></i>Time Table</a></li>
+                <li><a href="StudentFees.html"><i class="fas fa-rupee-sign"></i>Fees Details</a></li>
+                <li><a href="StudentExam.html"><i class="fas fa-file-alt"></i>Exam Details</a></li>
+                <li><a href="StudentResults.html"><i class="fas fa-file-export"></i>Result Details</a></li>
+                <li><a href="StudentReport.html"><i class="fas fa-edit"></i>Reports</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- navigation section ends here  -->
+
+    <!-- Student Exam section starts here  -->
+
+    <div class="main-content">
+
+        <header id="header-part">
+
+            <div class="menu-toggle">
+                <h1>Exam Details</h1>
+            </div>
+
+            <div class="icon">
+                <a title="logout" href="./index.html"><span class="dismiss">Logout </span><span
+                        class="fas fa-file-export"></span></a>
+            </div>
+
+        </header>
+
+        <div class="main">
+
+            <div class="page-header">
+
+                <div>
+                    <h1> <span class="UserDesign">Find Details...</span></h1>
+                </div>
+
+                <div class="header-actions">
+
+                    <a class="emoji1" href="./StudentReport.html">
+                        <span class="fas fa-edit"></span>
+                        Enquiry
+                    </a>
+
+                    <a onclick="history.back()" class="emoji2">
+                        <span class="fas fa-arrow-left"></span>
+                        Go Back
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="Exam-Container">
+
+                <div class="container" onclick="openExamHallAllocation()">
+                    <h1>Exam Hall Allocations </h1>
+                </div>
+
+                <div class="container" onclick="openExamTimetable()">
+                    <h1>Exam Timetable</h1>
+                </div>
+
+                <div class="container" onclick="openPayExamFees()">
+                    <h1>Pay Exam Fees</h1>
+                </div>
+
+                <div class="container" onclick="openExamFeesPaymentList()">
+                    <h1>Exam Fees Payment List</h1>
+                </div>
+
+            </div>
+
+            <div class="hall-Allocations" id="hide1">
+
+                <section class="StudExamDetails">
+
+                    <div class="StudExamDetails-list">
+
+                        <h1>Exam hall Allocations</h1>
+
+                        <table class="StudExamDetails-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Year/ Semester</th>
+                                    <th>program</th>
+                                    <th>No. Of Students</th>
+                                    <th>Hall No.</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>01</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Automobile Engineering</td>
+                                    <td>38</td>
+                                    <td>E201 & E202</td>
+                                </tr>
+
+                                <tr>
+                                    <td>02</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Civil Engineering</td>
+                                    <td>22</td>
+                                    <td>B201 & B202</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>03</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Computer Science and Engineering</td>
+                                    <td>152</td>
+                                    <td>F201 & F202 & F203</td>
+                                </tr>
+
+                                <tr>
+                                    <td>04</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Electrical and Electronics Engineering</td>
+                                    <td>82</td>
+                                    <td>A201 & A202</td>
+                                </tr>
+
+                                <tr>
+                                    <td>05</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Electronics and Communication Engineering</td>
+                                    <td>76</td>
+                                    <td>A301 & A302</td>
+                                </tr>
+
+                                <tr>
+                                    <td>06</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Mechanical Engineering</td>
+                                    <td>20</td>
+                                    <td>A203</td>
+                                </tr>
+
+                                <tr>
+                                    <td>07</td>
+                                    <td>1st Year / 2nd Semester</td>
+                                    <td>Informational Technology</td>
+                                    <td>98</td>
+                                    <td>D301 & D302</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="Exam-Timetable" id="hide2">
+
+                <section class="StudExamDetails">
+
+                    <div class="StudExamDetails-list">
+
+                        <h1>Exam Time table</h1>
+
+                        <table class="StudExamDetails-table">
+
+                            <p>timing : 01.30 P.M. TO 04.30 P.M</p>
+                            <thead>
+
+                                <tr>
+                                    <th>Date & Day / <br>programme</th>
+                                    <th>05/12/2022 <br> Monday</th>
+                                    <th>07/12/2022 <br> Wednesday</th>
+                                    <th>09/12/2022 <br> Friday</th>
+                                    <th>12/12/2022 <br> Monday</th>
+                                    <th>14/12/2022 <br> Wednesday</th>
+                                    <th>16/12/2022 <br> Friday</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>B.E-Automobile Engineering</td>
+                                    <td>18HS051-Professional Ethics</td>
+                                    <td>18ME712-Mechatronics</td>
+                                    <td>18AU712-Vehicle Dynamics</td>
+                                    <td>18AU713-Vehicle Maintanence Testing</td>
+                                    <td>18AU765-Rapid Prototype tooling</td>
+                                    <td>18AU712-Intelligence Vehicle Technology</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B.E-Civil Engineering</td>
+                                    <td>18HS051-Professional Ethics</td>
+                                    <td>18CE712-Quantity Sources of Energy</td>
+                                    <td>18ME773-Renewable Sources of Energy</td>
+                                    <td>18CE764-Construction Safety</td>
+                                    <td>18CE767-Industrial Waste</td>
+                                    <td>18MC053-Essence of Indian traditional Knowledge</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>B.E-Computer Science <br> Engineering</td>
+                                    <td>18HS051-Professional Ethics</td>
+                                    <td>18CS711-Big Data and Cloud Computing</td>
+                                    <td>18CS712-Cryptography and Network Security</td>
+                                    <td>18CS713-Graphics and Multimedia</td>
+                                    <td>18CS763-High Speed Networks/ 18CS766-Business Intelligence</td>
+                                    <td> - </td>
+                                </tr>
+
+                                <tr>
+                                    <td>B.E-Electrical and <br> Electronics Engineering</td>
+                                    <td>18EE711-Eembedded Systems</td>
+                                    <td>18EE712-Industrial Automation Control</td>
+                                    <td>18EE763-Power System Operation</td>
+                                    <td>18EE764-Smart Grid Technologies</td>
+                                    <td>18EE766-Electric and Hybrid Vehicles</td>
+                                    <td>18ECS513-Web Programming/ 18EE769-Bio-Medical Instrumentation</td>
+                                </tr>
+
+                                <tr>
+                                    <td>B.E-Electronics and <br> Communication Engineering</td>
+                                    <td>18EC711-Wireless and Cellular Communication</td>
+                                    <td>18EC712-Microwave Engineering</td>
+                                    <td>18EC713-Fiber Optical Communication</td>
+                                    <td>18EC773-Wireless Networks</td>
+                                    <td>18CS869-Internet Of Things</td>
+                                    <td> - </td>
+                                </tr>
+
+                                <tr>
+                                    <td>B.E-Mechanical Engineering</td>
+                                    <td>18ME711-Finite Element Analysis</td>
+                                    <td>18ME712-Mechatronics</td>
+                                    <td>18ME773-Renewable Sources of Energy</td>
+                                    <td>18ME777-Hydraulics Pneumatics</td>
+                                    <td>18AU811-Electric and Hybrid Vehicles</td>
+                                    <td> - </td>
+                                </tr>
+
+                                <tr>
+                                    <td>B.E-Information Technology</td>
+                                    <td>18HS051-Professional Ethics</td>
+                                    <td>18IT711-Mobile Application Development</td>
+                                    <td>18IT712-Computer Graphics</td>
+                                    <td>18IT713-Cryptography and Network Security</td>
+                                    <td>18ME776-Industrial Robotics</td>
+                                    <td> - </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="Pay-Exam-Fees" id="hide3">
+
+                <div class="StudentExam-container">
+
+                    <h1>Exam Fees</h1>
+
+                    <form>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <label>College Name</label>
+                                <input disabled autocomplete="off" value="Cloud Institute Of Engineering">
+                            </div>
+
+                            <div class="input-field">
+                                <label>Register number</label>
+                                <input autocomplete="off" maxlength="7" placeholder="Enter Register Number">
+                            </div>
+
+                        </div>
+
+                        <div class="buttons">
+
+                            <a class="btn" type="submit" href="ExamViewPage.html">
+                                SUBMIT <i class="fas fa-caret-square-right"></i>
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="Exam-Fees-Payment-List" id="hide4">
+
+                <div class="StudentExam-container">
+
+                    <h1>Find Details </h1>
+
+                    <form>
+
+                        <div class="fields">
+
+                            <div class="input-field">
+                                <input id="StudentExamregno" autocomplete="off" type="search"
+                                    placeholder="Type to search">
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <section class="StudExamDetails">
+
+                    <div class="StudExamDetails-list">
+
+                        <h1>Exam Timetable</h1>
+
+                        <table class="StudExamDetails-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th title="Sort By ID">S/No. <span class="fas fa-sort-numeric-down"></span></th>
+                                    <th title="Sort By REGISTER NUMBER">Register Number <span
+                                            class="fas fa-sort-numeric-down"></span></th>
+                                    <th title="Sort By NAME">Name <span class="fas fa-sort-alpha-down"></span></th>
+                                    <th>Degree</th>
+                                    <th title="Sort By DEPARTMENT">Department <span
+                                            class="fas fa-sort-alpha-down"></span></th>
+                                    <th title="Sort By AMOUNT">Amount <span class="fas fa-sort-numeric-down"></span>
+                                    </th>
+                                    <th title="Sort By FIELDS">fields <span class="fas fa-sort-alpha-down"></span></th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td>1913003</td>
+                                    <td>Dinesh kumar M</td>
+                                    <td>B.E.</td>
+                                    <td>CSE</td>
+                                    <td>2600</td>
+                                    <td>Paided</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>2</td>
+                                    <td>1913001</td>
+                                    <td>Aparna S</td>
+                                    <td>B.E.</td>
+                                    <td>CSE</td>
+                                    <td>2600</td>
+                                    <td>Paided</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>3</td>
+                                    <td>1913007</td>
+                                    <td>Rhenuka K</td>
+                                    <td>B.E.</td>
+                                    <td>CSE</td>
+                                    <td>2600</td>
+                                    <td>Paided</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>4</td>
+                                    <td>1913002</td>
+                                    <td>Divya K</td>
+                                    <td>B.E.</td>
+                                    <td>CSE</td>
+                                    <td>2600</td>
+                                    <td>Paided</td>
+                                </tr>
+
+                                <tr class="active">
+                                    <td>5</td>
+                                    <td>1913006</td>
+                                    <td>Kavin R</td>
+                                    <td>B.E.</td>
+                                    <td>CSE</td>
+                                    <td>2600</td>
+                                    <td>Paided</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Student Exam section ends here  -->
+
+</body>
+
+<!-- Javascript connection link  -->
+<script src="./scriptuser.js"></script>
+
+</html>
